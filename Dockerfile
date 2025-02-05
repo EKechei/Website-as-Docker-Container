@@ -7,9 +7,6 @@ LABEL maintainer="Edith Cherotich <edithcherotich32@gmail.com>"
 # Copy the website content (like index.html) into the /website directory
 COPY ./index.html /website/
 
-# Copy any other files from the root of the repo (e.g., assets, other HTML files) into /website
-COPY ./other_files /website/  # Replace `other_files` with the actual directory or files
-
 # Copy the custom Nginx configuration file
 COPY ./website.conf /etc/nginx/nginx.conf
 
